@@ -1,0 +1,9 @@
+[
+    {"title":"What's New", "url":"https://help.webex.com/en-us/article/nv7abhz/What's-new-for-administrators-in-Webex-Contact-Center"},
+    {"title":"User Guides (Administrator/Supervisor/User/Partner)", "url":"https://help.webex.com/en-us/landing/ld-xsu6ys-ContactCenter"},
+    {"title":"Setup and Administration Guide", "url":"https://help.webex.com/en-us/article/n5595zd/Webex-Contact-Center-Setup-and-Administration-Guide"},
+    {"title":"API Documentation", "url":"developer.webex-cx.com"},
+    {"title":"Technical Summit", "url":"https://cisco.sharepoint.com/sites/WxCCPartnerEnablement/SitePages/Webex-Contact-Center-Technical-Summit.aspx"},
+    {"title": "Webex Connect Documentation","url":"https://help.imiconnect.io/docs/welcome"},
+    {"title":"Webex Connect Github","url":"https://github.com/CiscoDevNet/webexcc-digital-channels"}
+]

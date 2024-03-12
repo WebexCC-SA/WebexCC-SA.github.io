@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "components/k-hub-links/k-hub-links.js",
+    "components/k-hub-tiles/k-hub-tiles.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.12.5",
+    "typescriptVersion": "5.3.3"
+  },
+  "collections": [],
+  "bundles": []
+}

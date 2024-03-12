@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    min-height: 30vh;
+    /* border: solid 2px; */
+
+}
+
+div {
+    display: grid;
+    /* height: 10em; */
+    place-items: center;
+    text-align: center;
+    border: solid 2px;
+    font-size: 20px;
+    max-height: 10rem;
+    /* max-width: 15rem; */
+    margin-left: 4rem;
+    
+}
+
+div:hover {
+    background-color: rgb(143, 140, 140);
+    color: white;
+
+}
+

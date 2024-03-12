@@ -1,0 +1,2 @@
+import{p as t,b as i}from"./p-afd6a731.js";export{s as setNonce}from"./p-afd6a731.js";import{g as a}from"./p-e1255160.js";const o=()=>{const s=import.meta.url;const i={};if(s!==""){i.resourcesUrl=new URL(".",s).href}return t(i)};o().then((async s=>{await a();return i([["p-bcc2ab65",[[1,"k-hub-links",{lList:[1,"l-list"],linksList:[32]}],[1,"k-hub-tiles",{tList:[1,"t-list"],tilesList:[32]}]]]],s)}));
+//# sourceMappingURL=hub-widgets.esm.js.map
