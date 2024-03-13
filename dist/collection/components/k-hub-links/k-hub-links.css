@@ -5,7 +5,7 @@
 
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -13,28 +13,26 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-    /* min-height: 40vh; */
-    border: solid 2px;
+    border: solid 2px rgb(179, 179, 179);
+    border-radius: 15px;
+    padding: 15px;
 
 }
 
 div {
     display: grid;
-    /* height: 10em; */
     place-items: center;
     text-align: center;
-    /* border: solid 2px; */
     font-size: 18px;
-    max-height: 10rem;
-    /* max-width: 15rem; */
-    margin-left: 4rem;
-    color: blue;
-    
+    color: rgb(57, 57, 196);
+    min-width: 75%;
+    overflow-wrap: anywhere;
+
+
 }
 
 div:hover {
-    /* background-color: rgb(143, 140, 140); */
-    background-color: blue;
-    color: white;
-
+    text-decoration: underline;
+    transition: .04s;
+    cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import { proxyCustomElement, HTMLElement, h } from '@stencil/core/internal/client';
 
-const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px}div{display:grid;place-items:center;text-align:center;font-size:18px;max-height:10rem;margin-left:4rem;color:blue}div:hover{background-color:blue;color:white}";
+const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;overflow-wrap:anywhere}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
 const KHubLinksStyle0 = kHubLinksCss;
 
 const kHubLinks = /*@__PURE__*/ proxyCustomElement(class kHubLinks extends HTMLElement {
@@ -23,7 +23,7 @@ const kHubLinks = /*@__PURE__*/ proxyCustomElement(class kHubLinks extends HTMLE
     }
     render() {
         let maincontent = this.linksList.map(link => (h("div", { key: '266b6927702938d5edd74ea973d71582d69aea66', onClick: this.launch.bind(this, link.url) }, link.title)));
-        return [h("h1", { key: 'cb486d104050677c17378f8bda68f1bf071d544d' }, "Useful Links"), h("section", { key: 'e0df65544cf48ffb7f24c6946457849db78c903c' }, maincontent)
+        return [h("section", { key: '243e7182405a1028650294f14a80c482e767332c' }, maincontent)
         ];
     }
     static get style() { return KHubLinksStyle0; }

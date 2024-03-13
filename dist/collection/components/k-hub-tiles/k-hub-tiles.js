@@ -15,8 +15,8 @@ export class kHubTiles {
         window.location.href = url;
     }
     render() {
-        let maincontent = this.tilesList.map(tile => (h("div", { key: '9c76bee6c54af241f4e5f3960fc8f13fbcca3dc3', onClick: this.launch.bind(this, tile.url) }, h("strong", { key: 'b70ce49de8ea549d8d6cd83215cfeff68223c018' }, tile.title))));
-        return [h("section", { key: '8cd985f21d65b3867481b09e16720adbddf51764' }, maincontent)
+        let maincontent = this.tilesList.map(tile => (h("div", { key: '0bd75c6f2395ecb95cf303e5eb9c5f2d8b83b5e9', onClick: this.launch.bind(this, tile.url) }, tile.title)));
+        return [h("section", { key: '5158eff8c7ed07c09e5708788ad5cb897b00b498' }, maincontent)
         ];
     }
     static get is() { return "k-hub-tiles"; }

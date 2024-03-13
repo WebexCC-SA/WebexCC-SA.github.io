@@ -1,6 +1,6 @@
 import { r as registerInstance, h } from './index-ceae7313.js';
 
-const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px}div{display:grid;place-items:center;text-align:center;font-size:18px;max-height:10rem;margin-left:4rem;color:blue}div:hover{background-color:blue;color:white}";
+const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;overflow-wrap:anywhere}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
 const KHubLinksStyle0 = kHubLinksCss;
 
 const kHubLinks = class {
@@ -21,13 +21,13 @@ const kHubLinks = class {
     }
     render() {
         let maincontent = this.linksList.map(link => (h("div", { key: '266b6927702938d5edd74ea973d71582d69aea66', onClick: this.launch.bind(this, link.url) }, link.title)));
-        return [h("h1", { key: 'cb486d104050677c17378f8bda68f1bf071d544d' }, "Useful Links"), h("section", { key: 'e0df65544cf48ffb7f24c6946457849db78c903c' }, maincontent)
+        return [h("section", { key: '243e7182405a1028650294f14a80c482e767332c' }, maincontent)
         ];
     }
 };
 kHubLinks.style = KHubLinksStyle0;
 
-const kHubTilesCss = ":host{display:flex;flex-direction:column;margin:5% 10%}section{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;min-height:30vh;}div{display:grid;place-items:center;text-align:center;border:solid 2px;font-size:20px;max-height:10rem;margin-left:4rem}div:hover{background-color:rgb(143, 140, 140);color:white}";
+const kHubTilesCss = ":host{display:flex;flex-direction:column;margin:5% 10%}section{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;min-height:30vh;place-items:center}div{display:grid;place-items:center;text-align:center;border:solid 2px rgb(179, 179, 179);font-size:20px;min-width:75%;max-width:75%;min-height:75%;border-radius:15px}div:hover{background-color:rgb(212, 208, 208);box-shadow:8px 8px 5px rgb(94, 92, 92);transition:.04s}";
 const KHubTilesStyle0 = kHubTilesCss;
 
 const kHubTiles = class {
@@ -47,8 +47,8 @@ const kHubTiles = class {
         window.location.href = url;
     }
     render() {
-        let maincontent = this.tilesList.map(tile => (h("div", { key: '9c76bee6c54af241f4e5f3960fc8f13fbcca3dc3', onClick: this.launch.bind(this, tile.url) }, h("strong", { key: 'b70ce49de8ea549d8d6cd83215cfeff68223c018' }, tile.title))));
-        return [h("section", { key: '8cd985f21d65b3867481b09e16720adbddf51764' }, maincontent)
+        let maincontent = this.tilesList.map(tile => (h("div", { key: '0bd75c6f2395ecb95cf303e5eb9c5f2d8b83b5e9', onClick: this.launch.bind(this, tile.url) }, tile.title)));
+        return [h("section", { key: '5158eff8c7ed07c09e5708788ad5cb897b00b498' }, maincontent)
         ];
     }
 };

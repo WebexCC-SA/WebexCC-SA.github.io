@@ -11,25 +11,34 @@ section {
     gap: 2rem;
     min-height: 30vh;
     /* border: solid 2px; */
+    place-items: center;
+    
+    
 
 }
 
 div {
     display: grid;
-    /* height: 10em; */
+
     place-items: center;
     text-align: center;
-    border: solid 2px;
+    border: solid 2px rgb(179, 179, 179);
     font-size: 20px;
-    max-height: 10rem;
-    /* max-width: 15rem; */
-    margin-left: 4rem;
+    min-width:75%;
+    max-width: 75%;
+    min-height: 75%;
+
+    border-radius: 15px;
     
 }
 
 div:hover {
-    background-color: rgb(143, 140, 140);
-    color: white;
-
+    background-color: rgb(212, 208, 208);
+    /* color: white; */
+    /* font-weight: bolder; */
+    /* border-color: black; */
+    box-shadow: 8px 8px 5px rgb(94, 92, 92);
+    transition: .04s;
+    
 }
 

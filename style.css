@@ -1,0 +1,17 @@
+body{
+background-image: linear-gradient(to bottom right, rgb(250, 249, 249), rgb(199, 190, 190)) ;
+display: block;
+height: 100vh;
+}
+
+pagetitle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+  h1{
+    font-size: 50px;
+  }
