@@ -1,6 +1,6 @@
 import { proxyCustomElement, HTMLElement, h } from '@stencil/core/internal/client';
 
-const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;overflow-wrap:anywhere}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
+const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:repeat(auto-fill, minmax(300px,1fr));gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px;place-items:center}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
 const KHubLinksStyle0 = kHubLinksCss;
 
 const kHubLinks = /*@__PURE__*/ proxyCustomElement(class kHubLinks extends HTMLElement {

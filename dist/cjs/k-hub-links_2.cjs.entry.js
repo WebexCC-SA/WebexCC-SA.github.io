@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 const index = require('./index-097b56d8.js');
 
-const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;overflow-wrap:anywhere}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
+const kHubLinksCss = ":host{display:flex;flex-direction:column;margin:0 10%}h1{text-align:center}section{display:grid;grid-template-columns:repeat(auto-fill, minmax(300px,1fr));gap:1rem;border:solid 2px rgb(179, 179, 179);border-radius:15px;padding:15px;place-items:center}div{display:grid;place-items:center;text-align:center;font-size:18px;color:rgb(57, 57, 196);min-width:75%;}div:hover{text-decoration:underline;transition:.04s;cursor:pointer}";
 const KHubLinksStyle0 = kHubLinksCss;
 
 const kHubLinks = class {
@@ -31,7 +31,7 @@ const kHubLinks = class {
 };
 kHubLinks.style = KHubLinksStyle0;
 
-const kHubTilesCss = ":host{display:flex;flex-direction:column;margin:5% 10%}section{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;min-height:30vh;place-items:center}div{display:grid;place-items:center;text-align:center;border:solid 2px rgb(179, 179, 179);font-size:20px;min-width:75%;max-width:75%;min-height:75%;border-radius:15px}div:hover{background-color:rgb(212, 208, 208);box-shadow:8px 8px 5px rgb(94, 92, 92);transition:.04s}";
+const kHubTilesCss = "\r\n\r\n@media(width > 600px){\r\n    :host {\r\n        display: flex; \r\n        flex-direction: column;\r\n        margin: 5% 10%;\r\n    \r\n        div{\r\n            min-width:75%;\r\n            max-width: 75;\r\n        }\r\n    }\r\n}\r\n\r\nsection {\r\n    display: grid;\r\n    /* grid-template-columns: 1fr 1fr 1fr; */\r\n    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));\r\n    gap: 2rem;\r\n    min-height: 30vh;\r\n    /* border: solid 2px; */\r\n    place-items: center;\r\n    \r\n    \r\n\r\n}\r\n\r\ndiv {\r\n    display: grid;\r\n    place-items: center;\r\n    text-align: center;\r\n    border: solid 2px rgb(179, 179, 179);\r\n    font-size: 20px;\r\n    min-width:60%;\r\n    max-width: 60%;\r\n    min-height: 75%;\r\n    border-radius: 15px;\r\n    \r\n}\r\n\r\ndiv:hover {\r\n    background-color: rgb(212, 208, 208);\r\n    /* color: white; */\r\n    /* font-weight: bolder; */\r\n    /* border-color: black; */\r\n    box-shadow: 8px 8px 5px rgb(94, 92, 92);\r\n    transition: .04s;\r\n    \r\n}\r\n\r\n";
 const KHubTilesStyle0 = kHubTilesCss;
 
 const kHubTiles = class {
