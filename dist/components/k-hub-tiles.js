@@ -8,28 +8,32 @@ const kHubTiles = /*@__PURE__*/ proxyCustomElement(class kHubTiles extends HTMLE
         super();
         this.__registerHost();
         this.__attachShadow();
-        this.tilesList = [];
         this.tList = undefined;
+        this.tiles = [];
+        this.tilesClean = [];
+        this.maincontent = [];
     }
-    async componentWillLoad() {
-        const response = await fetch(this.tList);
-        const tiles = await response.json();
-        this.tilesList = await tiles.map(match => {
-            return { title: match["title"], url: match["url"] };
+    componentWillLoad() {
+        Array.from(this.tList.split(",")).map(async (item) => {
+            const response = await fetch(item);
+            this.tiles.push(Array.from(await response.json()));
+            this.tilesClean = this.tiles.flat(Infinity);
+            this.maincontent = this.tilesClean.map(tile => (h("div", { onClick: this.launch.bind(this, tile.url) }, tile.title)));
         });
     }
     launch(url) {
         window.location.href = url;
     }
     render() {
-        let maincontent = this.tilesList.map(tile => (h("div", { key: '0bd75c6f2395ecb95cf303e5eb9c5f2d8b83b5e9', onClick: this.launch.bind(this, tile.url) }, tile.title)));
-        return [h("section", { key: '5158eff8c7ed07c09e5708788ad5cb897b00b498' }, maincontent)
+        return [h("section", { key: 'b5f78e7dcc9fbd2202ec950a8b8470ba9ec78020' }, this.maincontent)
         ];
     }
     static get style() { return KHubTilesStyle0; }
 }, [1, "k-hub-tiles", {
         "tList": [1, "t-list"],
-        "tilesList": [32]
+        "tiles": [32],
+        "tilesClean": [32],
+        "maincontent": [32]
     }]);
 function defineCustomElement$1() {
     if (typeof customElements === "undefined") {
