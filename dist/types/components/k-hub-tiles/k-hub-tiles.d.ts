@@ -1,10 +1,9 @@
 export declare class kHubTiles {
-    tilesList: {
-        title: string;
-        url: string;
-    }[];
     tList: string;
-    componentWillLoad(): Promise<void>;
+    tiles: any[];
+    tilesClean: any[];
+    maincontent: any[];
+    componentWillLoad(): void;
     launch(url: any): void;
     render(): any[];
 }
